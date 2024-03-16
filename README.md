@@ -1,7 +1,8 @@
 ![Stanford biodesign](https://github.com/emmyxth/2023-Utah/blob/main/custom-logo.img.full.high.png)
+![University of Utah](https://github.com/emmyxth/2023-Utah/blob/main/logo.svg)
 # USTEP: Tracking and Improving Patient Recovery
 
-USTEP is an innovative app developed to help patients recovering from Arterial PVD surgery monitor their health and recovery process without the need to travel for check-ups.
+USTEP is an innovative app developed in collaboration with the University of Utah Hospital to help patients recovering from Arterial PVD surgery monitor their health and recovery process without the need to travel for check-ups. 
 
 
 ## Scenario Overview
