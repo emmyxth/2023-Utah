@@ -1,65 +1,45 @@
-<!--
+![Stanford biodesign](https://github.com/emmyxth/2023-Utah/blob/main/custom-logo.img.full.high.png)
+# USTEP: Tracking and Improving Patient Recovery
 
-This source file is part of the CS342 2023 Utah Team Application project
-
-SPDX-FileCopyrightText: 2023 Stanford University
-
-SPDX-License-Identifier: MIT
-
--->
-
-# U-STEP
-
-This repository contains the U-STEP application build by the [CS342](https://cs342.stanford.edu) 2023 Utah Team.
-
-It demonstrates using the [Spezi](https://github.com/StanfordSpezi/Spezi) framework template and builds on top of the [Spezi Template Application](https://github.com/StanfordSpezi/SpeziTemplateApplication).
+USTEP is an innovative app developed to help patients recovering from Arterial PVD surgery monitor their health and recovery process without the need to travel for check-ups.
 
 
-## Application Structure
+## Scenario Overview
 
-The application uses a modularized structure enabled by using the Swift Package Manager.
+Doctors require regular check-ins post-surgery to ensure patient recovery, but in-person visits can be challenging for those living far away. USTEP offers a solution by enabling patients to report their progress remotely through an intuitive app interface.
 
-The application uses the Spezi `FHIR` standard to provide a shared repository for data exchanged between different modules using the `FHIR` standard.
-You can learn more about the Spezi standards-based software architecture in the [Spezi documentation](https://github.com/StanfordSpezi/Spezi).
+## Features
 
-## Build and Run the Application
+- **Patient-Friendly Interface**: Simple onboarding process with health data permissions setup.
+- **Custom Questionnaires**: Patients can complete PROMs surveys tailored to their specific conditions, like arterial or venous disease.
+- **Activity Tracking**: Integrates with devices to track steps and physical activity.
+- **Health Trends Analysis**: Visual representation of recovery trends and questionnaire score history.
 
-You can build and run the application using [Xcode](https://developer.apple.com/xcode/) by opening up the **Utah.xcodeproj**.
+## Onboarding
 
-The application provides a [Firebase Firestore](https://firebase.google.com/docs/firestore)-based data upload and [Firebase Authentication](https://firebase.google.com/docs/auth) login & sign-up.
-It is required to have the [Firebase Emulator Suite](https://firebase.google.com/docs/emulator-suite) to be up and running to use these features to build and test the application locally. Please follow the [installation instructions](https://firebase.google.com/docs/emulator-suite/install_and_configure). 
+Patients sign up for an account, accept a consent form, and input their health details to personalize the app experience.
 
-You do not have to make any modifications to the Firebase configuration, login into the `firebase` CLI using your Google account, or create a project in firebase to run, build, and test the application!
+## Interaction
 
-Startup the [Firebase Emulator Suite](https://firebase.google.com/docs/emulator-suite) using
-```
-$ firebase emulators:start --only auth,firestore
-```
+- **Visual Tasks**: Patients can upload images for visual-based health tasks.
+- **Timed Physical Tests**: The app facilitates physical tests with integrated timing mechanisms.
+- **Survey Completion**: Easy-to-navigate surveys are filled out directly in the app.
 
-After the emulators have started up, you can run the application in your simulator to build, test, and run the application.
+## Demo
 
-The application includes the following feature flags that can be configured in the [scheme editor in Xcode](https://help.apple.com/xcode/mac/11.4/index.html?localePath=en.lproj#/dev0bee46f46) and selecting the **Utah** scheme, the **Run** configuration, and to switch to the **Arguments** tab to add, enable, disable, or remove the following arguments passed on launch:
-- ``--skipOnboarding``: Skips the onboarding flow to enable easier development of features in the application and to allow UI tests to skip the onboarding flow.
-- ``--showOnboarding``: Always show the onboarding when the application is launched. Makes it easy to modify and test the onboarding flow without the need to manually remove the application or reset the simulator.
-- ``--disableFirebase``: Disables the Firebase interactions, including the login/sign-up step and the Firebase Firestore upload.
-- ``--useFirebaseEmulator``: Defines if the application should connect to the local firebase emulator. Always set to true when using the iOS simulator.
+[A link to our app's demo can be found here](https://github.com/emmyxth/2023-Utah/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2014%20-%202023-03-08%20at%2015.17.17.mp4)
 
 
-## Continuous Delivery Workflows
 
-The application includes continuous integration (CI) and continuous delivery (CD) setup.
-- Automatically build and test the application on every pull request before deploying it.
-- An automated setup to deploy the application to TestFlight every time there is a new commit on the repository's main branch.
-- Ensure a coherent code style by checking the conformance to the SwiftLint rules defined in `.swiftlint.yml` on every pull request and commit.
-- Ensure conformance to the [REUSE Specification](https://reuse.software/spec/) to property license the application and all related code.
+## Development Team
 
-Please refer to the [Spezi Template Application](https://github.com/StanfordSpezi/SpeziTemplateApplication) and the [ContinousDelivery Example by Paul Schmiedmayer](https://github.com/PSchmiedmayer/ContinousDelivery) for more background about the CI and CD setup for the Spezi Template Application.
+This app was conceptualized and developed in collaboration with Stanford developers, addressing a real-world problem faced by cardiovascular physicians at the University of Utah.
+
+## Contact
+
+For queries, suggestions, or contributions, please contact the USTEP development team.
 
 
-## Contributors & License
+## Acknowledgments
 
-This project is based on [ContinousDelivery Example by Paul Schmiedmayer](https://github.com/PSchmiedmayer/ContinousDelivery), and [Spezi Template Application](https://github.com/StanfordSpezi/SpeziTemplateApplication) provided using the MIT license.
-
-You can find a list of contributors in the [CONTRIBUTORS.md](https://github.com/CS342/2023-Utah/blob/main/CONTRIBUTORS.md) file.
-
-The U-STEP application is licensed under the [MIT license](https://github.com/CS342/2023-Utah/blob/main/LICENSES/MIT.txt).
+Special thanks to Jenn, Emmy, and the team of physicians at the University of Utah for their expertise and consultation during the development process.
