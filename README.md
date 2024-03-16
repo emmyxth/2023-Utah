@@ -27,7 +27,7 @@ Patients sign up for an account, accept a consent form, and input their health d
 
 ## Demo
 
-[A link to our app's demo can be found here](https://github.com/emmyxth/2023-Utah/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2014%20-%202023-03-08%20at%2015.17.17.mp4)
+[A link to our app's demo can be found here](https://drive.google.com/file/d/1UUstzcH4kODQ4Jn5a7PFoMXZ_tNUK6Pr/view?usp=sharing)
 
 
 
